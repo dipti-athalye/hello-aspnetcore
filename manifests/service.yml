@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: hello-aspnetcore-service
 spec:
+  progressDeadlineSeconds: 600
   selector:
     app: hello-aspnetcore-pod
   ports:
