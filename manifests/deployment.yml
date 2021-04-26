@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: hello-aspnetcore-deployment
 spec:
+  progressDeadlineSeconds: 600
   selector:
     matchLabels:
       app: hello-aspnetcore-pod
